@@ -2,7 +2,7 @@
 	"name": "ts-template-literal",
 	"displayName": "ts-template-literal",
 	"description": "Syntax highlighting for javascript and typescript in template literals.",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"publisher": "ncpa0cpl",
 	"license": "MIT",
 	"repository": {
