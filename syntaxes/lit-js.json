@@ -35,7 +35,6 @@
         }
       ]
     },
-
     {
       "name": "tsTaggedTemplates",
       "contentName": "meta.embedded.block.ts",
@@ -66,6 +65,72 @@
         },
         {
           "include": "source.ts"
+        }
+      ]
+    },
+    {
+      "name": "jsxTaggedTemplates",
+      "contentName": "meta.embedded.block.jsx",
+      "begin": "(jsx|\\/\\*{1,2}\\s(jsx|Jsx|JSX)\\s\\*\\/\\s*)`",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.function.tagged-template.jsx"
+        },
+        "2": {
+          "name": "string.jsx"
+        },
+        "3": {
+          "name": "punctuation.definition.string.template.begin.jsx"
+        }
+      },
+      "end": "(`)",
+      "endCaptures": {
+        "0": {
+          "name": "string.jsx"
+        },
+        "1": {
+          "name": "punctuation.definition.string.template.end.jsx"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.ts#template-substitution-element"
+        },
+        {
+          "include": "source.jsx"
+        }
+      ]
+    },
+    {
+      "name": "tsxTaggedTemplates",
+      "contentName": "meta.embedded.block.tsx",
+      "begin": "(tsx|\\/\\*{1,2}\\s(tsx|Tsx|TSX)\\s\\*\\/\\s*)`",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.function.tagged-template.tsx"
+        },
+        "2": {
+          "name": "string.tsx"
+        },
+        "3": {
+          "name": "punctuation.definition.string.template.begin.tsx"
+        }
+      },
+      "end": "(`)",
+      "endCaptures": {
+        "0": {
+          "name": "string.tsx"
+        },
+        "1": {
+          "name": "punctuation.definition.string.template.end.tsx"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.ts#template-substitution-element"
+        },
+        {
+          "include": "source.tsx"
         }
       ]
     }

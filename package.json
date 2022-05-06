@@ -1,36 +1,46 @@
 {
-  "name": "ts-template-literal",
-  "displayName": "ts-template-literal",
-  "description": "Syntax highlighting for javascript and typescript in template literals.",
-  "version": "1.0.0",
-  "publisher": "ncpa0cpl",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ncpa0cpl/ts-template-literal"
-  },
-  "engines": {
-    "vscode": "^1.5.0"
-  },
-  "categories": [
-    "Languages"
-  ],
-  "contributes": {
-    "grammars": [
-      {
-        "injectTo": [
-          "source.js",
-          "source.jsx",
-          "source.ts",
-          "source.tsx"
-        ],
-        "scopeName": "inline.lit-js",
-        "path": "./syntaxes/lit-js.json",
-        "embeddedLanguages": {
-          "meta.embedded.block.js": "js",
-          "meta.embedded.block.ts": "ts"
-        }
-      }
-    ]
-  }
+	"name": "ts-template-literal",
+	"displayName": "ts-template-literal",
+	"description": "Syntax highlighting for javascript and typescript in template literals.",
+	"version": "1.0.0",
+	"publisher": "ncpa0cpl",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ncpa0cpl/ts-template-literal"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"grammars": [
+			{
+				"injectTo": [
+					"source.js",
+					"source.jsx",
+					"source.ts",
+					"source.tsx"
+				],
+				"scopeName": "inline.lit-js",
+				"path": "./syntaxes/lit-js.json",
+				"embeddedLanguages": {
+					"meta.embedded.block.js": "js",
+					"meta.embedded.block.ts": "ts"
+				}
+			}
+		]
+	},
+	"__metadata": {
+		"installedTimestamp": 1651832272979,
+		"id": "6a148411-0d58-4aec-850a-7520d862608e",
+		"publisherId": "b8385a8b-cc29-4366-8b76-d95983390e92",
+		"publisherDisplayName": "ncpa0cpl",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false
+	}
 }
