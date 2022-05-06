@@ -1,6 +1,6 @@
 # ts-template-literal
 
-_totally forked from `vscode-sql-template-literal`_
+_totally forked from [vscode-sql-template-literal](https://github.com/icanhasjonas/vscode-js-template-literal)_
 
 Syntax highlighting for code like:
 
